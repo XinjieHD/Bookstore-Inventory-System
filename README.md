@@ -20,9 +20,9 @@ Python project that demonstrates how to perform CRUD operations with MongoDB usi
 
 #Example Usage
 <p>
-> add_book("1984", "George Orwell", 1949)
-> list_books()
-> update_book("1984", "Eric Arthur Blair")
-> delete_book("To Kill a Mockingbird")
+   add_book("1984", "George Orwell", 1949)
+   list_books()
+   update_book("1984", "Eric Arthur Blair")
+   delete_book("To Kill a Mockingbird")
 </p>
 
