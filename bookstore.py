@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
-# Connect to MongoDB (local or MongoDB Atlas)
-client = MongoClient("mongodb://localhost:27017/")  # Replace with your MongoDB URI if using Atlas
+# Connect to MongoDB
+client = MongoClient("mongodb://localhost:27017/")  
 db = client["bookstore"]
 collection = db["books"]
 
