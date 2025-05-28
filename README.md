@@ -12,9 +12,11 @@ Python project that demonstrates how to perform CRUD operations with MongoDB usi
 ## Setup
 1. Download `bookstore.py`.
 2. Install dependencies
-    '''pip install pymongo'''
-3. Run MongoDB locally
-4. Run the script
+   '''
+   pip install pymongo
+   '''
+4. Run MongoDB locally
+5. Run the script
     '''python bookstore.py'''
 
 #Example Usage
