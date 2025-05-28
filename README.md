@@ -12,17 +12,17 @@ Python project that demonstrates how to perform CRUD operations with MongoDB usi
 ## Setup
 1. Download `bookstore.py`.
 2. Install dependencies
-   '''
-   pip install pymongo
-   '''
+   `pip install pymongo`
 4. Run MongoDB locally
 5. Run the script
-    '''python bookstore.py'''
+   `python bookstore.py`
+
 
 #Example Usage
-'
+<p>
 add_book("1984", "George Orwell", 1949)
 list_books()
 update_book("1984", "Eric Arthur Blair")
-delete_book("To Kill a Mockingbird")'
+delete_book("To Kill a Mockingbird")
+</p>
 
