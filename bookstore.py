@@ -1,22 +1,21 @@
 from pymongo import MongoClient
 
-# Connect to MongoDB
+
 client = MongoClient("mongodb://localhost:27017/")  
 db = client["bookstore"]
 collection = db["books"]
 
-# Create
+
 def add_book(title, author, year):
     book = {"title": title, "author": author, "year": year}
     result = collection.insert_one(book)
     print(f"Book added with _id: {result.inserted_id}")
 
-# Read
+
 def list_books():
     for book in collection.find():
         print(book)
 
-# Update
 def update_book(title, new_author):
     result = collection.update_one({"title": title}, {"$set": {"author": new_author}})
     if result.modified_count:
@@ -24,7 +23,7 @@ def update_book(title, new_author):
     else:
         print("No matching book found.")
 
-# Delete
+
 def delete_book(title):
     result = collection.delete_one({"title": title})
     if result.deleted_count:
